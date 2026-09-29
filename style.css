@@ -69,6 +69,21 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* Short UI text (headings, buttons, nav, badges, numbers) isn't meant to
+   be copied, but on mobile a single tap on it can select the whole word
+   since it's a small, isolated bit of text rather than flowing prose. Real
+   body copy (paragraphs, list items) is left alone so it stays selectable
+   the normal way (press-and-hold), same as any other site. */
+h1, h2, h3, h4, h5, h6,
+button, .btn, a, .nav-link, .logo, .lang-btn,
+.section-title, .hero-tagline, .footer-links, .copyright,
+.owr-info-badge, .skills-tags span, .lang-tag,
+.ostro-stat-value, .ostro-stat-label, .modal-detail-tag {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
 /* Custom Selection */
 ::selection {
     background-color: rgba(255, 255, 255, 0.15);
