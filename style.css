@@ -1485,94 +1485,11 @@ button, input, textarea {
     color: var(--color-text);
 }
 
-/* --- Modal Dialog --- */
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
-}
-
-.modal.open {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.modal-wrapper {
-    position: relative;
-    z-index: 1002;
-    width: 90%;
-    max-width: 640px;
-    transform: translateY(15px) scale(0.96);
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), max-width 0.3s ease;
-}
-
-.modal.open .modal-wrapper {
-    transform: translateY(0) scale(1);
-}
-
-/* On desktop the modal has room to breathe: wider, so the demo screenshots
-   (full browser captures) are actually legible instead of shrunk to ~600px. */
-@media (min-width: 860px) {
-    .modal-wrapper { max-width: 780px; }
-}
-@media (min-width: 1180px) {
-    .modal-wrapper { max-width: 980px; }
-}
-@media (min-width: 1500px) {
-    .modal-wrapper { max-width: 1140px; }
-}
-
-.modal-container {
-    background: #080808;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    max-height: 85vh;
-    overflow-y: auto;
-    position: relative;
-    padding: 50px;
-}
-
-.modal-close {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    color: var(--color-text-muted);
-    transition: var(--transition-fast);
-}
-
-.modal-close:hover {
-    color: var(--color-text);
-}
-
-.modal-close svg {
-    width: 18px;
-    height: 18px;
-}
-
+/* --- Ostro Page Components ---
+   Originally built for an in-page modal (now replaced by the dedicated
+   ostro.html page), these are plain typography/grid components and work
+   just as well in normal page flow, so they stayed instead of being
+   rewritten from scratch. */
 .modal-detail-tag {
     display: inline-block;
     font-size: 0.75rem;
@@ -1644,6 +1561,101 @@ button, input, textarea {
     font-style: italic;
     color: var(--color-text-muted);
     margin-bottom: 32px;
+}
+
+/* Ostro "by the numbers" bento grid: same card shell as .focus-card, with
+   a big gradient value instead of a plain index number. */
+.ostro-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.ostro-stat-card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 28px 24px;
+    background: var(--color-surface);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.ostro-stat-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-border-hover);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+}
+
+.ostro-stat-value {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-variant-numeric: tabular-nums;
+    background: linear-gradient(135deg, #2b6ef5, #22d3ee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.ostro-stat-label {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.ostro-stat-desc {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Ostro technical architecture: grouped feature lists, two columns. */
+.ostro-arch-intro {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    max-width: 640px;
+    margin: 0 auto 44px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.65;
+}
+
+.ostro-arch-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.ostro-arch-group h4 {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.ostro-arch-group ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ostro-arch-group li {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    font-weight: 300;
+    line-height: 1.65;
+}
+
+.ostro-arch-group li strong {
+    color: var(--color-text-light);
+    font-weight: 500;
 }
 
 /* Ostro specs: floating flip cards, one per topic — front shows just the
@@ -1804,12 +1816,16 @@ button, input, textarea {
     padding: 10px;
     background: #050505;
     cursor: zoom-in;
-    transition: border-color 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
 .demo-screen-wrapper:hover,
 .demo-screen-wrapper:focus-visible {
+    transform: translateY(-4px);
     border-color: var(--color-border-hover);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
     outline: none;
 }
 
@@ -2014,6 +2030,15 @@ button, input, textarea {
         grid-template-columns: 1fr;
     }
 
+    .ostro-stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ostro-arch-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
     .focus-card {
         padding: 28px 22px;
     }
@@ -2056,10 +2081,6 @@ button, input, textarea {
     .journey-year {
         padding-top: 0;
         font-size: 0.85rem;
-    }
-    
-    .modal-container {
-        padding: 40px 24px;
     }
     
     .modal-meta-grid {
@@ -2105,7 +2126,6 @@ button, input, textarea {
     }
 
     .reveal-item,
-    .modal-wrapper,
     .project-card,
     .focus-card,
     .btn,

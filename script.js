@@ -70,6 +70,61 @@ document.addEventListener('DOMContentLoaded', () => {
                     Ponente: "Vento da ovest, generalmente mite e regolare: accompagna spesso giornate serene nelle stagioni intermedie."
                 }
             },
+            ostro: {
+                metaTitle: "Ostro | Assistente AI per Database | Tobia Barbini",
+                metaDescription: "Ostro è un agente AI offline che trasforma domande in linguaggio naturale in query SQL: architettura RAG con LLM locali, sicurezza read-only e zero dipendenza dal cloud.",
+                kicker: "Rosa dei Venti",
+                heroTitle: "Ostro",
+                heroTagline: "“Il vento che porta le tue domande fino in fondo ai dati, e torna con la risposta.”",
+                ctaDemo: "Contattami per una Demo",
+                scrollDown: "Scorri giù",
+                statsTitle: "In Numeri",
+                stat1Value: "7-14B",
+                stat1Label: "Parametri del Modello",
+                stat1Desc: "Modello linguistico open-source, eseguito interamente in locale, senza alcuna dipendenza da servizi cloud esterni.",
+                stat2Value: "128K",
+                stat2Label: "Token di Contesto",
+                stat2Desc: "Sufficienti ad analizzare schemi di database complessi in un'unica richiesta.",
+                stat3Value: "100%",
+                stat3Label: "Offline & Privacy First",
+                stat3Desc: "Nessuna domanda o dato aziendale lascia mai la tua infrastruttura.",
+                stat4Value: "Read-Only",
+                stat4Label: "Sicurezza dei Dati",
+                stat4Desc: "Blocco attivo di ogni comando distruttivo: DELETE, DROP, UPDATE, INSERT, ALTER.",
+                stat5Value: "Illimitate",
+                stat5Label: "Tabelle Supportate",
+                stat5Desc: "Si adatta a database di qualsiasi dimensione, senza vincoli sul numero di tabelle gestite.",
+                stat6Value: "CSV / JSON",
+                stat6Label: "Export Istantaneo",
+                stat6Desc: "Risultati e report esportabili con un clic, pronti da condividere.",
+                contextTitle: "Contesto",
+                contextText: "Questo progetto nasce per interporsi tra entità, ambienti e contesti diversi, eliminando l'incomunicabilità e i passaggi macchinosi. Nelle strutture informative tradizionali, la distanza tra chi cerca risposte e i dati memorizzati crea barriere e dipendenze rigide. Questo strumento si colloca in posizione intermedia, traducendo la complessità in un dialogo naturale.",
+                solutionTitle: "Soluzione",
+                solutionText: "Ostro è un agente virtuale offline in grado di interpretare domande formulate in linguaggio naturale e tradurle istantaneamente in query SQL precise. Elimina la rigidità dei canali tradizionali e rende l'interazione fluida, immediata e guidata dall'esperienza utente. Per garantire la tutela dell'ambiente dati, l'agente opera in sola lettura (READ-ONLY).",
+                archTitle: "Architettura Tecnica",
+                archIntro: "Ogni componente è stato scelto per garantire precisione, sicurezza e indipendenza dal cloud.",
+                arch1Title: "Intelligenza Artificiale",
+                arch1Item1: "<strong>Modello linguistico locale:</strong> comprende il linguaggio naturale senza appoggiarsi a servizi esterni o API cloud.",
+                arch1Item2: "<strong>Recupero contestuale (RAG):</strong> consulta la struttura del database in tempo reale per generare risposte precise e pertinenti.",
+                arch2Title: "Compatibilità Database",
+                arch2Item1: "<strong>Connessione diretta</strong> ai principali database relazionali aziendali, senza richiedere modifiche alla loro struttura.",
+                arch2Item2: "<strong>Riconoscimento automatico</strong> di tabelle, colonne e relazioni: nessuna configurazione manuale, nessun limite al numero di tabelle gestite.",
+                arch3Title: "Sicurezza & Data Governance",
+                arch3Item1: "<strong>Accesso in sola lettura:</strong> il sistema può consultare i dati ma non modificarli né cancellarli, in nessun caso.",
+                arch3Item2: "<strong>Zero Cloud Lock-in:</strong> in modalità offline, nessuna domanda o dato lascia mai l'infrastruttura del cliente.",
+                arch4Title: "Esperienza d'Uso",
+                arch4Item1: "<strong>Dashboard intuitiva</strong> con grafici interattivi e metriche sintetiche, pensata anche per chi non ha competenze tecniche.",
+                arch4Item2: "<strong>Si integra nei flussi di lavoro già in uso</strong> (ad esempio in chat aziendali), restituendo risposte immediate senza cambiare abitudini.",
+                arch4Item3: "<strong>Pronto per l'implementazione</strong> in ambienti aziendali, con tempi di attivazione rapidi.",
+                demoTitle: "Immagini Dimostrative",
+                demoNote: "La demo utilizza un set di dati dimostrativo (misurazioni del livello della marea lungo la costa italiana) per mostrare concretamente come chiunque possa ottenere report e grafici senza alcuna competenza tecnica.",
+                enlarge: "Ingrandisci",
+                demoAlt: "Schermata della demo di Ostro",
+                rotateHint: "⟳ Ruota lo schermo per una visione migliore",
+                ctaSectionTitle: "Vuoi Portare Ostro nella tua Azienda?",
+                ctaSectionText: "Se gestisci dati che oggi richiedono query manuali o il supporto continuo di un team IT, parliamone: posso mostrarti come Ostro si adatta al tuo database.",
+                ctaEmailBtn: "Scrivimi"
+            },
             contact: {
                 sectionTitle: "Contatti",
                 lead: "Se hai in mente un progetto, una collaborazione, o vuoi solo scambiare due parole sul mio percorso, scrivimi pure: mi fa sempre piacere. Per ora sono a Venezia, ma il vento sta già girando verso nuovi lidi.",
@@ -79,19 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 rights: "Tutti i diritti riservati.",
                 backToTop: "Torna all'inizio",
                 privacy: "Privacy Policy"
-            },
-            modal: {
-                close: "Chiudi",
-                scopeLabel: "Ambito",
-                dateLabel: "Data di Rilascio",
-                skillsLabel: "Competenze Applicate",
-                viewDemo: "Vedi la Demo",
-                backToSpecs: "Torna alle Specifiche",
-                demoHeading: "Immagini Dimostrative",
-                demoAlt: "Schermata della demo di Ostro",
-                flipHint: "Clicca per leggere",
-                enlarge: "Ingrandisci",
-                rotateHint: "⟳ Ruota lo schermo per una visione migliore"
             },
             meta: {
                 title: "Tobia Barbini | Facilitatore di Processi & Interazione",
@@ -184,6 +226,61 @@ document.addEventListener('DOMContentLoaded', () => {
                     Ponente: "A generally mild, steady westerly wind, often accompanying clear skies in the shoulder seasons."
                 }
             },
+            ostro: {
+                metaTitle: "Ostro | AI Database Assistant | Tobia Barbini",
+                metaDescription: "Ostro is an offline AI agent that turns natural language questions into SQL queries: RAG architecture with local LLMs, read-only security and zero cloud dependency.",
+                kicker: "Rosa dei Venti",
+                heroTitle: "Ostro",
+                heroTagline: "“The wind that carries your questions all the way to the data, and comes back with the answer.”",
+                ctaDemo: "Contact Me for a Demo",
+                scrollDown: "Scroll down",
+                statsTitle: "By the Numbers",
+                stat1Value: "7-14B",
+                stat1Label: "Model Parameters",
+                stat1Desc: "Open-source language model, running entirely locally, with no dependency on external cloud services.",
+                stat2Value: "128K",
+                stat2Label: "Context Window",
+                stat2Desc: "Enough to analyze complex database schemas in a single request.",
+                stat3Value: "100%",
+                stat3Label: "Offline & Privacy First",
+                stat3Desc: "No question or company data ever leaves your infrastructure.",
+                stat4Value: "Read-Only",
+                stat4Label: "Data Security",
+                stat4Desc: "Active blocking of every destructive command: DELETE, DROP, UPDATE, INSERT, ALTER.",
+                stat5Value: "Unlimited",
+                stat5Label: "Tables Supported",
+                stat5Desc: "Scales to databases of any size, with no limit on the number of tables it can handle.",
+                stat6Value: "CSV / JSON",
+                stat6Label: "Instant Export",
+                stat6Desc: "Results and reports exportable in one click, ready to share.",
+                contextTitle: "Context",
+                contextText: "This project exists to sit between different entities, environments and contexts, eliminating communication breakdowns and cumbersome processes. In traditional information systems, the distance between those seeking answers and the stored data creates barriers and rigid dependencies. This tool occupies that intermediate position, translating complexity into natural dialogue.",
+                solutionTitle: "Solution",
+                solutionText: "Ostro is an offline virtual agent capable of interpreting questions asked in natural language and instantly translating them into precise SQL queries. It removes the rigidity of traditional channels and makes the interaction fluid, immediate and driven by user experience. To protect the data environment, the agent operates in read-only mode.",
+                archTitle: "Technical Architecture",
+                archIntro: "Every component was chosen to guarantee precision, security and independence from the cloud.",
+                arch1Title: "Artificial Intelligence",
+                arch1Item1: "<strong>Local language model:</strong> understands natural language without relying on external services or cloud APIs.",
+                arch1Item2: "<strong>Contextual retrieval (RAG):</strong> consults the database structure in real time to generate precise, relevant answers.",
+                arch2Title: "Database Compatibility",
+                arch2Item1: "<strong>Direct connection</strong> to the main enterprise relational databases, with no changes required to their structure.",
+                arch2Item2: "<strong>Automatic recognition</strong> of tables, columns and relationships: no manual configuration, no limit on the number of tables handled.",
+                arch3Title: "Security & Data Governance",
+                arch3Item1: "<strong>Read-only access:</strong> the system can consult data but never modify or delete it, under any circumstance.",
+                arch3Item2: "<strong>Zero cloud lock-in:</strong> in offline mode, no question or data ever leaves the client's infrastructure.",
+                arch4Title: "User Experience",
+                arch4Item1: "<strong>Intuitive dashboard</strong> with interactive charts and concise metrics, designed for non-technical users too.",
+                arch4Item2: "<strong>Integrates into existing workflows</strong> (for example, workplace chat tools), giving immediate answers without changing habits.",
+                arch4Item3: "<strong>Ready for deployment</strong> in enterprise environments, with fast activation times.",
+                demoTitle: "Demo Screenshots",
+                demoNote: "The demo uses a sample dataset (tide level measurements along the Italian coast) to show concretely how anyone can produce reports and charts with no technical skills required.",
+                enlarge: "Enlarge",
+                demoAlt: "Ostro demo screenshot",
+                rotateHint: "⟳ Rotate your screen for a better view",
+                ctaSectionTitle: "Want to Bring Ostro to Your Company?",
+                ctaSectionText: "If you manage data that currently requires manual queries or constant IT support, let's talk: I can show you how Ostro adapts to your database.",
+                ctaEmailBtn: "Get in Touch"
+            },
             contact: {
                 sectionTitle: "Contact",
                 lead: "If you have a project or collaboration in mind, or just want to chat about my background, drop me a line. I'd genuinely love to hear from you. I'm in Venice for now, but the wind is already turning toward new shores.",
@@ -193,19 +290,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 rights: "All rights reserved.",
                 backToTop: "Back to top",
                 privacy: "Privacy Policy"
-            },
-            modal: {
-                close: "Close",
-                scopeLabel: "Scope",
-                dateLabel: "Release Date",
-                skillsLabel: "Skills Applied",
-                viewDemo: "View the Demo",
-                backToSpecs: "Back to Specs",
-                demoHeading: "Demo Images",
-                demoAlt: "Ostro demo screenshot",
-                flipHint: "Click to read",
-                enlarge: "Enlarge",
-                rotateHint: "⟳ Rotate your screen for a better view"
             },
             meta: {
                 title: "Tobia Barbini | Process & Interaction Facilitator",
@@ -239,8 +323,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let currentLang = localStorage.getItem('site-lang') === 'en' ? 'en' : 'it';
-    let ostroModalOpen = false;
-    let currentModalView = null; // 'specs' | 'demo'
     let currentBannerWind = null; // which wind's info banner is open, if any
     const owrPointButtons = []; // wind-rose buttons, so language switches can relabel tooltips/aria without a full rebuild
 
@@ -250,11 +332,14 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('site-lang', lang);
         document.documentElement.lang = lang;
 
-        // Sub-pages (e.g. privacy.html) carry their own <title>/description
-        // rather than the homepage's, via a data-page attribute on <body>.
+        // Sub-pages (e.g. privacy.html, ostro.html) carry their own
+        // <title>/description rather than the homepage's, via a data-page
+        // attribute on <body>.
         const page = document.body.dataset.page;
-        const titleKey = page === 'privacy' ? 'privacy.metaTitle' : 'meta.title';
-        const descKey = page === 'privacy' ? 'privacy.metaDescription' : 'meta.description';
+        const pageMetaKeys = { privacy: 'privacy', ostro: 'ostro' };
+        const metaNamespace = pageMetaKeys[page];
+        const titleKey = metaNamespace ? `${metaNamespace}.metaTitle` : 'meta.title';
+        const descKey = metaNamespace ? `${metaNamespace}.metaDescription` : 'meta.description';
 
         const pageTitle = getTranslation(lang, titleKey);
         if (pageTitle) document.title = pageTitle;
@@ -272,19 +357,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if (value !== null) el.setAttribute('aria-label', value);
         });
 
+        document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+            const value = getTranslation(lang, el.dataset.i18nAlt);
+            if (value !== null) el.setAttribute('alt', value);
+        });
+
         document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.classList.toggle('active', btn.dataset.lang === lang);
         });
-
-        // If the Ostro modal is open, re-render whichever view (specs or
-        // demo) is showing rather than leaving it stuck in the old language.
-        if (ostroModalOpen) {
-            if (currentModalView === 'demo' && typeof renderOstroDemo === 'function') {
-                renderOstroDemo();
-            } else if (typeof renderOstroSpecs === 'function') {
-                renderOstroSpecs();
-            }
-        }
 
         if (typeof updateWindroseLabels === 'function') {
             updateWindroseLabels();
@@ -360,6 +440,62 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- 2b. Ostro Stats Count-Up ---
+    // Animates each .ostro-stat-value's number(s) up from 0 to their final
+    // value the first time the "In Numeri" section scrolls into view.
+    // Values with no digits (e.g. "Read-Only") are left as-is. Indices are
+    // captured once from the original (already-translated) text, so the
+    // string can be safely rebuilt every frame without positions drifting.
+    // Slow, gently-decelerating and staggered card-to-card, closer to the
+    // unhurried counters on modern SaaS landing pages than a quick tick-up.
+    const statValues = document.querySelectorAll('.ostro-stat-value');
+    if (statValues.length && !prefersReducedMotion) {
+        const COUNT_DURATION = 2200;
+        const STAGGER_STEP = 150;
+        const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+        function animateStatValue(el, delay) {
+            const original = el.textContent;
+            const matches = [...original.matchAll(/\d+/g)];
+            if (!matches.length) return;
+
+            const targets = matches.map(m => parseInt(m[0], 10));
+
+            function frame(now, start) {
+                const t = Math.min((now - start) / COUNT_DURATION, 1);
+                const eased = easeOutCubic(t);
+
+                let result = '';
+                let cursor = 0;
+                matches.forEach((m, i) => {
+                    result += original.slice(cursor, m.index);
+                    result += Math.round(targets[i] * eased).toString();
+                    cursor = m.index + m[0].length;
+                });
+                result += original.slice(cursor);
+                el.textContent = result;
+
+                if (t < 1) requestAnimationFrame(now2 => frame(now2, start));
+            }
+
+            setTimeout(() => {
+                requestAnimationFrame(start => frame(start, start));
+            }, delay);
+        }
+
+        const statsObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const index = [...statValues].indexOf(entry.target);
+                    animateStatValue(entry.target, index * STAGGER_STEP);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.4 });
+
+        statValues.forEach(el => statsObserver.observe(el));
+    }
+
     // --- 3. Dynamic Footer Year ---
     const yearEl = document.getElementById('year');
     if (yearEl) {
@@ -400,87 +536,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // --- 5. Ostro Project Data & Modal (specs + demo screenshots) ---
-    const projectsData = {
-        it: {
-            ostro: {
-                title: "Ostro",
-                category: "Rosa dei Venti",
-                tagline: "“Il vento che porta le tue domande fino in fondo ai dati, e torna con la risposta.”",
-                sections: [
-                    {
-                        title: "Contesto",
-                        text: "Questo progetto rappresenta la prima concretizzazione applicativa di una visione più ampia: interporsi tra entità, ambienti e contesti diversi per eliminare l'incomunicabilità ed i passaggi macchinosi. Nelle strutture informative tradizionali, la distanza tra chi cerca risposte ed i dati memorizzati crea barriere e dipendenze rigide. Questo strumento nasce per collocarsi in posizione intermedia, traducendo la complessità in un dialogo naturale."
-                    },
-                    {
-                        title: "Soluzione",
-                        text: "Ostro è un agente virtuale offline in grado di interpretare domande formulate in linguaggio naturale e tradurle istantaneamente in query SQL precise. Elimina la rigidità dei canali tradizionali e rende l'interazione fluida, immediata e guidata dall'esperienza utente. Per garantire la tutela dell'ambiente dati, l'agente opera in sola lettura (READ-ONLY)."
-                    },
-                    {
-                        title: "Informazioni sulla Demo",
-                        text: "Per mostrare sul campo come la mediazione possa semplificare il rapporto con l'informazione, la demo si appoggia su un database di prova con dati semplificati e simulati (misurazioni del livello della marea lungo la costa italiana), evidenziando come chiunque possa ricavare report e grafici senza ostacoli tecnici."
-                    },
-                    {
-                        title: "Architettura (100% Locale, Sicura ed Indipendente)",
-                        list: [
-                            { label: "Modello di Linguaggio", text: "LLM Open-Source per l'interpretazione del linguaggio naturale senza intermediazioni esterne." },
-                            { label: "Gestione Conoscenza (RAG)", text: "Recupero contestuale di tabelle e metadati per un dialogo coerente ed esatto." },
-                            { label: "Versatilità Applicativa", text: "Container Docker pronto a porsi come ponte su qualsiasi ecosistema dati esistente." }
-                        ]
-                    }
-                ],
-                tech: ["Python", "LLM Locali", "RAG (AI)", "Facilitazione Dati", "Docker", "Embedding Models"],
-                client: "Progetto Personale",
-                date: "Giugno 2026"
-            }
-        },
-        en: {
-            ostro: {
-                title: "Ostro",
-                category: "Rosa dei Venti",
-                tagline: "“The wind that carries your questions all the way to the data, and comes back with the answer.”",
-                sections: [
-                    {
-                        title: "Context",
-                        text: "This project is the first applied realization of a broader vision: positioning myself between different entities, environments and contexts to eliminate communication breakdowns and cumbersome processes. In traditional information systems, the distance between those seeking answers and the stored data creates barriers and rigid dependencies. This tool was built to sit in that intermediate position, translating complexity into natural dialogue."
-                    },
-                    {
-                        title: "Solution",
-                        text: "Ostro is an offline virtual agent capable of interpreting questions asked in natural language and instantly translating them into precise SQL queries. It removes the rigidity of traditional channels and makes the interaction fluid, immediate and driven by user experience. To protect the data environment, the agent operates in read-only mode."
-                    },
-                    {
-                        title: "About the Demo",
-                        text: "To show in practice how this mediation can simplify the relationship with information, the demo runs on a test database with simplified, simulated data (tide level measurements along the Italian coast), showing how anyone can produce reports and charts without technical obstacles."
-                    },
-                    {
-                        title: "Architecture (100% Local, Secure and Independent)",
-                        list: [
-                            { label: "Language Model", text: "An open-source LLM for interpreting natural language without any external intermediation." },
-                            { label: "Knowledge Management (RAG)", text: "Contextual retrieval of tables and metadata for a coherent, accurate dialogue." },
-                            { label: "Applicative Versatility", text: "A Docker container ready to act as a bridge onto any existing data ecosystem." }
-                        ]
-                    }
-                ],
-                tech: ["Python", "Local LLMs", "RAG (AI)", "Data Facilitation", "Docker", "Embedding Models"],
-                client: "Personal Project",
-                date: "June 2026"
-            }
-        }
-    };
-
-    const DEMO_SCREENSHOTS = [
-        "screen/screen%201.png",
-        "screen/screen%202.png",
-        "screen/screen%203.png",
-        "screen/screen%204.png",
-        "screen/screen%205.png"
-    ];
-
-    const modal = document.getElementById('project-modal');
-    const modalContent = document.getElementById('modal-content-details');
-    const modalClose = document.getElementById('modal-close');
-    const modalOverlay = document.getElementById('modal-overlay');
-
+    // --- 5. Ostro Wind Banner (links out to the dedicated ostro.html page) ---
     const owrInfoBanner = document.getElementById('owr-info-banner');
     const owrInfoClose = document.getElementById('owr-info-close');
     const owrInfoBadge = document.getElementById('owr-info-badge');
@@ -493,8 +549,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // dei venti (see buildWindRose below), always centered over the
     // compass itself (see .owr-info-banner in style.css) so it appears in
     // the same predictable spot regardless of which wind was clicked.
-    // Only the active wind (Ostro) gets a CTA through to the full project
-    // specs modal.
+    // Only the active wind (Ostro) gets a CTA, which links out to its
+    // dedicated page (ostro.html) instead of opening an in-page modal.
     function showWindBanner(wind) {
         if (!owrInfoBanner) return;
         const labels = translations[currentLang].windrose;
@@ -506,7 +562,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (wind.active) {
             owrInfoCta.textContent = labels.viewProject;
-            owrInfoCta.onclick = () => { hideWindBanner(); openOstroModal(); };
+            owrInfoCta.onclick = () => { window.location.href = 'ostro.html'; };
             owrInfoNote.textContent = '';
         } else {
             owrInfoCta.textContent = '';
@@ -526,140 +582,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (owrInfoClose) owrInfoClose.addEventListener('click', hideWindBanner);
 
-    function getOstroData() {
-        return (projectsData[currentLang] || projectsData.it).ostro;
-    }
-
-    // The "previous scheda": Ostro's specs, each old paragraph now a titled card.
-    function renderOstroSpecs() {
-        const project = getOstroData();
-        if (!modal || !modalContent) return;
-        const labels = translations[currentLang].modal;
-
-        const techHtml = project.tech.map(t => `<span>${t}</span>`).join('');
-
-        const cardsHtml = project.sections.map((section, i) => {
-            const textHtml = section.text ? `<p>${section.text}</p>` : '';
-            const listHtml = section.list
-                ? `<ul class="spec-card-list">${section.list.map(item => `<li><strong>${item.label}:</strong> ${item.text}</li>`).join('')}</ul>`
-                : '';
-            return `
-                <div class="spec-card" tabindex="0" role="button" aria-pressed="false" aria-label="${section.title}" style="animation-delay: ${i * 0.1}s;">
-                    <div class="spec-card-inner">
-                        <div class="spec-card-face spec-card-front">
-                            <span class="spec-card-num">0${i + 1}</span>
-                            <h5>${section.title}</h5>
-                            <span class="spec-card-hint">${labels.flipHint}</span>
-                        </div>
-                        <div class="spec-card-face spec-card-back">
-                            ${textHtml}${listHtml}
-                        </div>
-                    </div>
-                </div>
-            `;
-        }).join('');
-
-        modalContent.innerHTML = `
-            <span class="modal-detail-tag">${project.category}</span>
-            <h3 class="modal-detail-title">${project.title}</h3>
-            <p class="modal-detail-tagline">${project.tagline}</p>
-
-            <div class="modal-meta-grid">
-                <div class="modal-meta-item">
-                    <h5>${labels.scopeLabel}</h5>
-                    <p>${project.client}</p>
-                </div>
-                <div class="modal-meta-item">
-                    <h5>${labels.dateLabel}</h5>
-                    <p>${project.date}</p>
-                </div>
-                <div class="modal-meta-item" style="grid-column: span 2;">
-                    <h5>${labels.skillsLabel}</h5>
-                    <div class="modal-tech-list">
-                        ${techHtml}
-                    </div>
-                </div>
-            </div>
-
-            <div class="spec-cards">${cardsHtml}</div>
-
-            <div class="modal-btn-row">
-                <button class="btn btn-primary modal-view-demo-btn">${labels.viewDemo}</button>
-                <button class="btn btn-secondary modal-close-btn">${labels.close}</button>
-            </div>
-        `;
-
-        currentModalView = 'specs';
-        modalContent.scrollTop = 0;
-
-        modalContent.querySelectorAll('.spec-card').forEach(card => {
-            const toggleFlip = () => {
-                const flipped = card.classList.toggle('flipped');
-                card.setAttribute('aria-pressed', String(flipped));
-            };
-            card.addEventListener('click', toggleFlip);
-            card.addEventListener('keydown', e => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    toggleFlip();
-                }
-            });
+    // --- 5b. Ostro Page Components (spec-card flip, demo gallery) ---
+    // Static markup lives in ostro.html; these just wire up the
+    // interactions. No-ops on pages without these elements (index.html,
+    // privacy.html), same as the other defensively-guarded listeners here.
+    document.querySelectorAll('.spec-card').forEach(card => {
+        const toggleFlip = () => {
+            const flipped = card.classList.toggle('flipped');
+            card.setAttribute('aria-pressed', String(flipped));
+        };
+        card.addEventListener('click', toggleFlip);
+        card.addEventListener('keydown', e => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleFlip();
+            }
         });
+    });
 
-        const demoBtn = modalContent.querySelector('.modal-view-demo-btn');
-        if (demoBtn) demoBtn.addEventListener('click', renderOstroDemo);
-        const closeBtn = modalContent.querySelector('.modal-close-btn');
-        if (closeBtn) closeBtn.addEventListener('click', closeModal);
-
-        attachMagneticButtons(modalContent);
-    }
-
-    // The demo: just the 5 screenshots, uncaptioned for now.
-    function renderOstroDemo() {
-        if (!modal || !modalContent) return;
-        const project = getOstroData();
-        const labels = translations[currentLang].modal;
-
-        const imagesHtml = DEMO_SCREENSHOTS.map(src => `
-            <div class="demo-screen-wrapper" tabindex="0" role="button" aria-label="${labels.enlarge}">
-                <img src="${src}" alt="${labels.demoAlt}" loading="lazy">
-            </div>
-        `).join('');
-
-        modalContent.innerHTML = `
-            <span class="modal-detail-tag">${project.title}</span>
-            <h3 class="modal-detail-title">${labels.demoHeading}</h3>
-
-            <div class="demo-screens">${imagesHtml}</div>
-
-            <div class="modal-btn-row">
-                <button class="btn btn-primary modal-back-btn">${labels.backToSpecs}</button>
-                <button class="btn btn-secondary modal-close-btn">${labels.close}</button>
-            </div>
-        `;
-
-        currentModalView = 'demo';
-        modalContent.scrollTop = 0;
-
-        modalContent.querySelectorAll('.demo-screen-wrapper').forEach(wrapper => {
-            const img = wrapper.querySelector('img');
-            const open = () => openLightbox(img.src, img.alt);
-            wrapper.addEventListener('click', open);
-            wrapper.addEventListener('keydown', e => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    open();
-                }
-            });
+    document.querySelectorAll('.demo-screen-wrapper').forEach(wrapper => {
+        const img = wrapper.querySelector('img');
+        if (!img) return;
+        const open = () => openLightbox(img.src, img.alt);
+        wrapper.addEventListener('click', open);
+        wrapper.addEventListener('keydown', e => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                open();
+            }
         });
-
-        const backBtn = modalContent.querySelector('.modal-back-btn');
-        if (backBtn) backBtn.addEventListener('click', renderOstroSpecs);
-        const closeBtn = modalContent.querySelector('.modal-close-btn');
-        if (closeBtn) closeBtn.addEventListener('click', closeModal);
-
-        attachMagneticButtons(modalContent);
-    }
+    });
 
     // Screenshot lightbox: full-screen view of a clicked demo screenshot.
     const lightbox = document.getElementById('image-lightbox');
@@ -684,45 +636,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
     if (lightboxOverlay) lightboxOverlay.addEventListener('click', closeLightbox);
 
-    function openOstroModal(options) {
-        if (!modal) return;
-        renderOstroSpecs();
-        if (!(options && options.keepOpen === true)) {
-            modal.classList.add('open');
-        }
-        modal.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
-        ostroModalOpen = true;
-    }
-
-    function closeModal() {
-        if (!modal) return;
-        modal.classList.remove('open');
-        modal.setAttribute('aria-hidden', 'true');
-        document.body.style.overflow = '';
-        ostroModalOpen = false;
-        currentModalView = null;
-    }
-
-    if (modalClose) modalClose.addEventListener('click', closeModal);
-    if (modalOverlay) modalOverlay.addEventListener('click', closeModal);
-    
     window.addEventListener('keydown', e => {
         if (e.key !== 'Escape') return;
         if (lightbox && lightbox.classList.contains('open')) {
             closeLightbox();
-        } else if (modal && modal.classList.contains('open')) {
-            closeModal();
         } else if (currentBannerWind) {
             hideWindBanner();
         }
     });
 
-    // --- 5b. Rosa dei Venti (project selector) ---
+    // --- 5c. Rosa dei Venti (project selector) ---
     // Ported from rosa-dei-venti.html: an interactive compass where each
     // cardinal point is a project slot. Only Ostro is active for now;
-    // clicking it opens its specs in the modal above instead of navigating
-    // to a separate URL.
+    // clicking it opens the wind banner above, which links out to
+    // ostro.html.
     (function buildWindRose() {
         const root = document.getElementById('owr-root');
         const needle = document.getElementById('owr-needle');
@@ -985,9 +912,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // often than the screen refreshes, so writing styles on every single
     // event (as the previous version did) causes stutter under fast
     // mouse movement — this keeps every effect locked to the frame rate.
-    // Kept top-level (not nested in the reduced-motion check below) so it —
-    // and attachMagneticButtons, which depends on it — are always callable,
-    // including from the Ostro modal renderers defined earlier in this file.
+    // Kept top-level (not nested in the reduced-motion check below) so it,
+    // and attachMagneticButtons which depends on it, are always callable
+    // before they're used further down in this file.
     function rafThrottle(apply) {
         let queued = null;
         let rafId = null;
@@ -1008,10 +935,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Gives every .btn inside `container` the same magnetic hover pull as
-    // the static buttons below. Needed because the Ostro modal's buttons
-    // (specs/demo views) are (re)built via innerHTML well after the initial
-    // page-load pass, so that pass never saw them — called again after each
-    // render in renderOstroSpecs()/renderOstroDemo().
+    // the static buttons below.
     function attachMagneticButtons(container) {
         if (prefersReducedMotion || !container) return;
         container.querySelectorAll('.btn').forEach(btn => {

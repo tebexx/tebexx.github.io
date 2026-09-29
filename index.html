@@ -343,9 +343,9 @@
 
                 <!-- Single Featured Project Showcase: an interactive "rosa dei venti"
                      (wind rose) — each cardinal point is a project slot. Only Ostro
-                     is active for now; clicking it opens a short info banner, which
-                     for Ostro also links to the full specs modal below (see
-                     script.js, section 5 & 5b). -->
+                     is active for now; clicking it opens a short info banner, whose
+                     CTA links out to the dedicated ostro.html page (see script.js,
+                     section 5). -->
                 <div class="featured-project reveal-item">
                     <h3 class="windrose-name" data-i18n="projects.windroseName">Rosa dei Venti</h3>
                     <p class="windrose-desc" data-i18n="projects.windroseDesc">
@@ -428,42 +428,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Project Details Modal -->
-    <div id="project-modal" class="modal" aria-hidden="true" role="dialog">
-        <div class="modal-overlay" id="modal-overlay"></div>
-        <div class="modal-wrapper">
-            <div class="modal-container">
-                <button class="modal-close" aria-label="Chiudi" id="modal-close" data-i18n-aria="modal.close">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                </button>
-                <div class="modal-content" id="modal-content-details">
-                    <!-- Dynamic Content -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Screenshot Lightbox: opens a demo screenshot at full screen -->
-    <div id="image-lightbox" class="lightbox" aria-hidden="true">
-        <div class="lightbox-overlay" id="lightbox-overlay"></div>
-        <button class="lightbox-close" id="lightbox-close" aria-label="Chiudi" data-i18n-aria="modal.close">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-        </button>
-        <img class="lightbox-img" id="lightbox-img" src="" alt="">
-        <!-- Shown only on narrow, portrait screens (see .lightbox-rotate-hint
-             in style.css) — these screenshots are wide desktop UI, so a
-             portrait phone can't display them at a readable size. -->
-        <p class="lightbox-rotate-hint" data-i18n="modal.rotateHint">
-            ⟳ Ruota lo schermo per una visione migliore
-        </p>
-    </div>
 
     <!-- Script -->
     <script src="script.js"></script>

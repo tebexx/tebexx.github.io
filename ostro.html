@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ostro | Assistente AI per Database | Tobia Barbini</title>
+    <meta name="description" content="Ostro è un agente AI offline che trasforma domande in linguaggio naturale in query SQL: architettura RAG con LLM locali, sicurezza read-only e zero dipendenza dal cloud.">
+    <meta name="author" content="Tobia Barbini">
+
+    <!-- Stylesheet (Outfit + Plus Jakarta Sans are self-hosted via @font-face in here) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="ostro">
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Header: standalone page, no link back to the portfolio (not even
+         the logo) — this page is meant to be sent on its own. Only the
+         language switch remains. -->
+    <header class="header">
+        <div class="container header-container">
+            <span class="logo">
+                TB
+            </span>
+
+            <div class="header-actions">
+                <div class="lang-switch" id="lang-switch">
+                    <button class="lang-btn" data-lang="it" aria-label="Italiano" title="Italiano">
+                        <svg viewBox="0 0 3 2" width="22" height="15" aria-hidden="true">
+                            <rect width="1" height="2" x="0" fill="#009246"></rect>
+                            <rect width="1" height="2" x="1" fill="#F1F2F1"></rect>
+                            <rect width="1" height="2" x="2" fill="#CE2B37"></rect>
+                        </svg>
+                    </button>
+                    <button class="lang-btn" data-lang="en" aria-label="English" title="English">
+                        <svg viewBox="0 0 60 36" width="22" height="15" aria-hidden="true">
+                            <rect width="60" height="36" fill="#012169"></rect>
+                            <line x1="0" y1="0" x2="60" y2="36" stroke="#FFFFFF" stroke-width="7"></line>
+                            <line x1="60" y1="0" x2="0" y2="36" stroke="#FFFFFF" stroke-width="7"></line>
+                            <line x1="0" y1="0" x2="60" y2="36" stroke="#C8102E" stroke-width="3"></line>
+                            <line x1="60" y1="0" x2="0" y2="36" stroke="#C8102E" stroke-width="3"></line>
+                            <rect x="24" width="12" height="36" fill="#FFFFFF"></rect>
+                            <rect y="12" width="60" height="12" fill="#FFFFFF"></rect>
+                            <rect x="27" width="6" height="36" fill="#C8102E"></rect>
+                            <rect y="15" width="60" height="6" fill="#C8102E"></rect>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-glow" id="hero-glow" aria-hidden="true"></div>
+            <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+            <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-tagline reveal-item" data-i18n="ostro.kicker">Rosa dei Venti</span>
+                    <h1 class="hero-title reveal-item" data-i18n="ostro.heroTitle">Ostro</h1>
+                    <p class="hero-description reveal-item" data-i18n="ostro.heroTagline">
+                        “Il vento che porta le tue domande fino in fondo ai dati, e torna con la risposta.”
+                    </p>
+                    <div class="hero-cta reveal-item">
+                        <a href="mailto:tobia.barbini@gmail.com" class="btn btn-primary" data-i18n="ostro.ctaDemo">Contattami per una Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#stats" class="scroll-down-btn" aria-label="Scorri giù" data-i18n-aria="ostro.scrollDown">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+            </a>
+        </section>
+
+        <!-- Stats / Bento Grid -->
+        <section class="section" id="stats">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="ostro.statsTitle">In Numeri</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="ostro-stats-grid">
+                    <div class="ostro-stat-card reveal-item">
+                        <div class="ostro-stat-value" data-i18n="ostro.stat1Value">7-14B</div>
+                        <div class="ostro-stat-label" data-i18n="ostro.stat1Label">Parametri del Modello</div>
+                        <p class="ostro-stat-desc" data-i18n="ostro.stat1Desc">Modello linguistico open-source, eseguito interamente in locale, senza alcuna dipendenza da servizi cloud esterni.</p>
+                    </div>
+                    <div class="ostro-stat-card reveal-item">
+                        <div class="ostro-stat-value" data-i18n="ostro.stat2Value">128K</div>
+                        <div class="ostro-stat-label" data-i18n="ostro.stat2Label">Token di Contesto</div>
+                        <p class="ostro-stat-desc" data-i18n="ostro.stat2Desc">Sufficienti ad analizzare schemi di database complessi in un'unica richiesta.</p>
+                    </div>
+                    <div class="ostro-stat-card reveal-item">
+                        <div class="ostro-stat-value" data-i18n="ostro.stat3Value">100%</div>
+                        <div class="ostro-stat-label" data-i18n="ostro.stat3Label">Offline & Privacy First</div>
+                        <p class="ostro-stat-desc" data-i18n="ostro.stat3Desc">Nessuna domanda o dato aziendale lascia mai la tua infrastruttura.</p>
+                    </div>
+                    <div class="ostro-stat-card reveal-item">
+                        <div class="ostro-stat-value" data-i18n="ostro.stat4Value">Read-Only</div>
+                        <div class="ostro-stat-label" data-i18n="ostro.stat4Label">Sicurezza dei Dati</div>
+                        <p class="ostro-stat-desc" data-i18n="ostro.stat4Desc">Blocco attivo di ogni comando distruttivo: DELETE, DROP, UPDATE, INSERT, ALTER.</p>
+                    </div>
+                    <div class="ostro-stat-card reveal-item">
+                        <div class="ostro-stat-value" data-i18n="ostro.stat5Value">Illimitate</div>
+                        <div class="ostro-stat-label" data-i18n="ostro.stat5Label">Tabelle Supportate</div>
+                        <p class="ostro-stat-desc" data-i18n="ostro.stat5Desc">Si adatta a database di qualsiasi dimensione, senza vincoli sul numero di tabelle gestite.</p>
+                    </div>
+                    <div class="ostro-stat-card reveal-item">
+                        <div class="ostro-stat-value" data-i18n="ostro.stat6Value">CSV / JSON</div>
+                        <div class="ostro-stat-label" data-i18n="ostro.stat6Label">Export Istantaneo</div>
+                        <p class="ostro-stat-desc" data-i18n="ostro.stat6Desc">Risultati e report esportabili con un clic, pronti da condividere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Context & Solution -->
+        <section class="section" id="context">
+            <div class="container">
+                <div class="about-text reveal-item" style="max-width: 780px; margin: 0 auto;">
+                    <h3 data-i18n="ostro.contextTitle">Contesto</h3>
+                    <p data-i18n="ostro.contextText">
+                        Questo progetto nasce per interporsi tra entità, ambienti e contesti diversi, eliminando l'incomunicabilità e i passaggi macchinosi. Nelle strutture informative tradizionali, la distanza tra chi cerca risposte e i dati memorizzati crea barriere e dipendenze rigide. Questo strumento si colloca in posizione intermedia, traducendo la complessità in un dialogo naturale.
+                    </p>
+
+                    <h3 data-i18n="ostro.solutionTitle">Soluzione</h3>
+                    <p data-i18n="ostro.solutionText">
+                        Ostro è un agente virtuale offline in grado di interpretare domande formulate in linguaggio naturale e tradurle istantaneamente in query SQL precise. Elimina la rigidità dei canali tradizionali e rende l'interazione fluida, immediata e guidata dall'esperienza utente. Per garantire la tutela dell'ambiente dati, l'agente opera in sola lettura (READ-ONLY).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Architecture -->
+        <section class="section" id="architecture">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="ostro.archTitle">Architettura Tecnica</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <p class="ostro-arch-intro" data-i18n="ostro.archIntro">Ogni componente è stato scelto per garantire precisione, sicurezza e indipendenza dal cloud.</p>
+
+                <div class="ostro-arch-grid">
+                    <div class="ostro-arch-group reveal-item">
+                        <h4 data-i18n="ostro.arch1Title">Intelligenza Artificiale</h4>
+                        <ul>
+                            <li data-i18n="ostro.arch1Item1"><strong>Modello linguistico locale:</strong> comprende il linguaggio naturale senza appoggiarsi a servizi esterni o API cloud.</li>
+                            <li data-i18n="ostro.arch1Item2"><strong>Recupero contestuale (RAG):</strong> consulta la struttura del database in tempo reale per generare risposte precise e pertinenti.</li>
+                        </ul>
+                    </div>
+
+                    <div class="ostro-arch-group reveal-item">
+                        <h4 data-i18n="ostro.arch2Title">Compatibilità Database</h4>
+                        <ul>
+                            <li data-i18n="ostro.arch2Item1"><strong>Connessione diretta</strong> ai principali database relazionali aziendali, senza richiedere modifiche alla loro struttura.</li>
+                            <li data-i18n="ostro.arch2Item2"><strong>Riconoscimento automatico</strong> di tabelle, colonne e relazioni: nessuna configurazione manuale, nessun limite al numero di tabelle gestite.</li>
+                        </ul>
+                    </div>
+
+                    <div class="ostro-arch-group reveal-item">
+                        <h4 data-i18n="ostro.arch3Title">Sicurezza & Data Governance</h4>
+                        <ul>
+                            <li data-i18n="ostro.arch3Item1"><strong>Accesso in sola lettura:</strong> il sistema può consultare i dati ma non modificarli né cancellarli, in nessun caso.</li>
+                            <li data-i18n="ostro.arch3Item2"><strong>Zero Cloud Lock-in:</strong> in modalità offline, nessuna domanda o dato lascia mai l'infrastruttura del cliente.</li>
+                        </ul>
+                    </div>
+
+                    <div class="ostro-arch-group reveal-item">
+                        <h4 data-i18n="ostro.arch4Title">Esperienza d'Uso</h4>
+                        <ul>
+                            <li data-i18n="ostro.arch4Item1"><strong>Dashboard intuitiva</strong> con grafici interattivi e metriche sintetiche, pensata anche per chi non ha competenze tecniche.</li>
+                            <li data-i18n="ostro.arch4Item2"><strong>Si integra nei flussi di lavoro già in uso</strong> (ad esempio in chat aziendali), restituendo risposte immediate senza cambiare abitudini.</li>
+                            <li data-i18n="ostro.arch4Item3"><strong>Pronto per l'implementazione</strong> in ambienti aziendali, con tempi di attivazione rapidi.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Screenshots -->
+        <section class="section" id="demo">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="ostro.demoTitle">Immagini Dimostrative</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="demo-screens">
+                    <div class="demo-screen-wrapper reveal-item" tabindex="0" role="button" data-i18n-aria="ostro.enlarge" aria-label="Ingrandisci">
+                        <img src="screen/screen%201.png" data-i18n-alt="ostro.demoAlt" alt="Schermata della demo di Ostro" loading="lazy">
+                    </div>
+                    <div class="demo-screen-wrapper reveal-item" tabindex="0" role="button" data-i18n-aria="ostro.enlarge" aria-label="Ingrandisci">
+                        <img src="screen/screen%202.png" data-i18n-alt="ostro.demoAlt" alt="Schermata della demo di Ostro" loading="lazy">
+                    </div>
+                    <div class="demo-screen-wrapper reveal-item" tabindex="0" role="button" data-i18n-aria="ostro.enlarge" aria-label="Ingrandisci">
+                        <img src="screen/screen%203.png" data-i18n-alt="ostro.demoAlt" alt="Schermata della demo di Ostro" loading="lazy">
+                    </div>
+                    <div class="demo-screen-wrapper reveal-item" tabindex="0" role="button" data-i18n-aria="ostro.enlarge" aria-label="Ingrandisci">
+                        <img src="screen/screen%204.png" data-i18n-alt="ostro.demoAlt" alt="Schermata della demo di Ostro" loading="lazy">
+                    </div>
+                    <div class="demo-screen-wrapper reveal-item" tabindex="0" role="button" data-i18n-aria="ostro.enlarge" aria-label="Ingrandisci">
+                        <img src="screen/screen%205.png" data-i18n-alt="ostro.demoAlt" alt="Schermata della demo di Ostro" loading="lazy">
+                    </div>
+                </div>
+
+                <p class="modal-detail-desc" style="max-width: 780px; margin: 32px auto 0; text-align: center;" data-i18n="ostro.demoNote">
+                    La demo utilizza un set di dati dimostrativo (misurazioni del livello della marea lungo la costa italiana) per mostrare concretamente come chiunque possa ottenere report e grafici senza alcuna competenza tecnica.
+                </p>
+            </div>
+        </section>
+
+        <!-- CTA / Contact -->
+        <section class="contact-section section" id="cta">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="ostro.ctaSectionTitle">Vuoi Portare Ostro nella tua Azienda?</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-simple reveal-item">
+                    <p class="contact-lead" data-i18n="ostro.ctaSectionText">
+                        Se gestisci dati che oggi richiedono query manuali o il supporto continuo di un team IT, parliamone: posso mostrarti come Ostro si adatta al tuo database.
+                    </p>
+                    <div class="contact-buttons">
+                        <a href="mailto:tobia.barbini@gmail.com" class="btn btn-primary" data-i18n="ostro.ctaEmailBtn">Scrivimi</a>
+                        <a href="https://www.linkedin.com/in/tobia-barbini-51a0702b9" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; <span id="year">2026</span> Tobia Barbini. <span data-i18n="footer.rights">Tutti i diritti riservati.</span></p>
+            <div class="footer-links">
+                <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                <a href="#hero" data-i18n="footer.backToTop">Torna all'inizio</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Screenshot Lightbox: opens a demo screenshot at full screen -->
+    <div id="image-lightbox" class="lightbox" aria-hidden="true">
+        <div class="lightbox-overlay" id="lightbox-overlay"></div>
+        <button class="lightbox-close" id="lightbox-close" aria-label="Chiudi" data-i18n-aria="windrose.closeBanner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        <!-- Shown only on narrow, portrait screens (see .lightbox-rotate-hint
+             in style.css) — these screenshots are wide desktop UI, so a
+             portrait phone can't display them at a readable size. -->
+        <p class="lightbox-rotate-hint" data-i18n="ostro.rotateHint">
+            ⟳ Ruota lo schermo per una visione migliore
+        </p>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
