@@ -1692,6 +1692,59 @@ button, input, textarea {
     line-height: 1.65;
 }
 
+/* Ostro roadmap: honestly separate from "Architettura Tecnica" above, which
+   only lists what already works. Same card shell, but the amber badge
+   visually flags these as in-progress rather than shipped. */
+.ostro-roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.ostro-roadmap-card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 26px 24px;
+    background: var(--color-surface);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.ostro-roadmap-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-border-hover);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+}
+
+.ostro-roadmap-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #fbbf24;
+    background: rgba(251, 191, 36, 0.12);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+}
+
+.ostro-roadmap-card h4 {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.ostro-roadmap-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    font-weight: 300;
+    line-height: 1.65;
+}
+
 /* Ostro specs: floating flip cards, one per topic — front shows just the
    title, a click/tap/Enter flips it to reveal the paragraph on the back. */
 .spec-cards {
@@ -2064,7 +2117,8 @@ button, input, textarea {
         grid-template-columns: 1fr;
     }
 
-    .ostro-arch-grid {
+    .ostro-arch-grid,
+    .ostro-roadmap-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
