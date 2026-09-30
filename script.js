@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('site-lang', lang);
         document.documentElement.lang = lang;
 
-        // Sub-pages (e.g. privacy.html, ostro.html) carry their own
+        // Sub-pages (e.g. privacy.html, ostro/index.html) carry their own
         // <title>/description rather than the homepage's, via a data-page
         // attribute on <body>.
         const page = document.body.dataset.page;
@@ -528,7 +528,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // --- 5. Ostro Wind Banner (links out to the dedicated ostro.html page) ---
+    // --- 5. Ostro Wind Banner (links out to the dedicated /ostro/ page) ---
     const owrInfoBanner = document.getElementById('owr-info-banner');
     const owrInfoClose = document.getElementById('owr-info-close');
     const owrInfoBadge = document.getElementById('owr-info-badge');
@@ -542,7 +542,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // compass itself (see .owr-info-banner in style.css) so it appears in
     // the same predictable spot regardless of which wind was clicked.
     // Only the active wind (Ostro) gets a CTA, which links out to its
-    // dedicated page (ostro.html) instead of opening an in-page modal.
+    // dedicated page (/ostro/) instead of opening an in-page modal.
     function showWindBanner(wind) {
         if (!owrInfoBanner) return;
         const labels = translations[currentLang].windrose;
@@ -554,7 +554,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (wind.active) {
             owrInfoCta.textContent = labels.viewProject;
-            owrInfoCta.onclick = () => { window.location.href = 'ostro.html'; };
+            owrInfoCta.onclick = () => { window.location.href = '/ostro/'; };
             owrInfoNote.textContent = '';
         } else {
             owrInfoCta.textContent = '';
@@ -575,7 +575,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (owrInfoClose) owrInfoClose.addEventListener('click', hideWindBanner);
 
     // --- 5b. Ostro Page Components (spec-card flip, demo gallery) ---
-    // Static markup lives in ostro.html; these just wire up the
+    // Static markup lives in ostro/index.html; these just wire up the
     // interactions. No-ops on pages without these elements (index.html,
     // privacy.html), same as the other defensively-guarded listeners here.
     document.querySelectorAll('.spec-card').forEach(card => {
@@ -641,7 +641,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Ported from rosa-dei-venti.html: an interactive compass where each
     // cardinal point is a project slot. Only Ostro is active for now;
     // clicking it opens the wind banner above, which links out to
-    // ostro.html.
+    // /ostro/.
     (function buildWindRose() {
         const root = document.getElementById('owr-root');
         const needle = document.getElementById('owr-needle');

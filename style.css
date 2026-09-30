@@ -1502,7 +1502,7 @@ button, input, textarea {
 
 /* --- Ostro Page Components ---
    Originally built for an in-page modal (now replaced by the dedicated
-   ostro.html page), these are plain typography/grid components and work
+   /ostro/ page), these are plain typography/grid components and work
    just as well in normal page flow, so they stayed instead of being
    rewritten from scratch. */
 .modal-detail-tag {
