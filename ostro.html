@@ -119,19 +119,9 @@
                         <p class="ostro-stat-desc" data-i18n="ostro.stat3Desc">Nessuna domanda o dato aziendale lascia mai la tua infrastruttura.</p>
                     </div>
                     <div class="ostro-stat-card reveal-item">
-                        <div class="ostro-stat-value" data-i18n="ostro.stat4Value">Read-Only</div>
-                        <div class="ostro-stat-label" data-i18n="ostro.stat4Label">Sicurezza dei Dati</div>
-                        <p class="ostro-stat-desc" data-i18n="ostro.stat4Desc">Blocco attivo di ogni comando distruttivo: DELETE, DROP, UPDATE, INSERT, ALTER.</p>
-                    </div>
-                    <div class="ostro-stat-card reveal-item">
                         <div class="ostro-stat-value" data-i18n="ostro.stat5Value">Illimitate</div>
                         <div class="ostro-stat-label" data-i18n="ostro.stat5Label">Tabelle Supportate</div>
                         <p class="ostro-stat-desc" data-i18n="ostro.stat5Desc">Si adatta a database di qualsiasi dimensione, senza vincoli sul numero di tabelle gestite.</p>
-                    </div>
-                    <div class="ostro-stat-card reveal-item">
-                        <div class="ostro-stat-value" data-i18n="ostro.stat6Value">CSV / JSON</div>
-                        <div class="ostro-stat-label" data-i18n="ostro.stat6Label">Export Istantaneo</div>
-                        <p class="ostro-stat-desc" data-i18n="ostro.stat6Desc">Risultati e report esportabili con un clic, pronti da condividere.</p>
                     </div>
                 </div>
             </div>
@@ -164,37 +154,51 @@
                 <p class="ostro-arch-intro" data-i18n="ostro.archIntro">Ogni componente è stato scelto per garantire precisione, sicurezza e indipendenza dal cloud.</p>
 
                 <div class="ostro-arch-grid">
-                    <div class="ostro-arch-group reveal-item">
+                    <div class="ostro-arch-card reveal-item">
+                        <div class="ostro-arch-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="6" y="6" width="12" height="12" rx="2"></rect>
+                                <path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"></path>
+                            </svg>
+                        </div>
                         <h4 data-i18n="ostro.arch1Title">Intelligenza Artificiale</h4>
-                        <ul>
-                            <li data-i18n="ostro.arch1Item1"><strong>Modello linguistico locale:</strong> comprende il linguaggio naturale senza appoggiarsi a servizi esterni o API cloud.</li>
-                            <li data-i18n="ostro.arch1Item2"><strong>Recupero contestuale (RAG):</strong> consulta la struttura del database in tempo reale per generare risposte precise e pertinenti.</li>
-                        </ul>
+                        <p data-i18n="ostro.arch1Text">Modello linguistico locale che genera risposte precise consultando in tempo reale la struttura del database (RAG).</p>
                     </div>
 
-                    <div class="ostro-arch-group reveal-item">
+                    <div class="ostro-arch-card reveal-item">
+                        <div class="ostro-arch-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
+                                <path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"></path>
+                                <path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"></path>
+                            </svg>
+                        </div>
                         <h4 data-i18n="ostro.arch2Title">Compatibilità Database</h4>
-                        <ul>
-                            <li data-i18n="ostro.arch2Item1"><strong>Connessione diretta</strong> ai principali database relazionali aziendali, senza richiedere modifiche alla loro struttura.</li>
-                            <li data-i18n="ostro.arch2Item2"><strong>Riconoscimento automatico</strong> di tabelle, colonne e relazioni: nessuna configurazione manuale, nessun limite al numero di tabelle gestite.</li>
-                        </ul>
+                        <p data-i18n="ostro.arch2Text">Si connette ai principali database relazionali aziendali e riconosce automaticamente tabelle, colonne e relazioni.</p>
                     </div>
 
-                    <div class="ostro-arch-group reveal-item">
+                    <div class="ostro-arch-card reveal-item">
+                        <div class="ostro-arch-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path>
+                                <path d="M9 12l2 2 4-4"></path>
+                            </svg>
+                        </div>
                         <h4 data-i18n="ostro.arch3Title">Sicurezza & Data Governance</h4>
-                        <ul>
-                            <li data-i18n="ostro.arch3Item1"><strong>Accesso in sola lettura:</strong> il sistema può consultare i dati ma non modificarli né cancellarli, in nessun caso.</li>
-                            <li data-i18n="ostro.arch3Item2"><strong>Zero Cloud Lock-in:</strong> in modalità offline, nessuna domanda o dato lascia mai l'infrastruttura del cliente.</li>
-                        </ul>
+                        <p data-i18n="ostro.arch3Text">Accesso in sola lettura e funzionamento offline: i tuoi dati restano al sicuro, senza mai lasciare la tua infrastruttura.</p>
                     </div>
 
-                    <div class="ostro-arch-group reveal-item">
+                    <div class="ostro-arch-card reveal-item">
+                        <div class="ostro-arch-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="9" rx="1"></rect>
+                                <rect x="14" y="3" width="7" height="5" rx="1"></rect>
+                                <rect x="14" y="12" width="7" height="9" rx="1"></rect>
+                                <rect x="3" y="16" width="7" height="5" rx="1"></rect>
+                            </svg>
+                        </div>
                         <h4 data-i18n="ostro.arch4Title">Esperienza d'Uso</h4>
-                        <ul>
-                            <li data-i18n="ostro.arch4Item1"><strong>Dashboard intuitiva</strong> con grafici interattivi e metriche sintetiche, pensata anche per chi non ha competenze tecniche.</li>
-                            <li data-i18n="ostro.arch4Item2"><strong>Si integra nei flussi di lavoro già in uso</strong> (ad esempio in chat aziendali), restituendo risposte immediate senza cambiare abitudini.</li>
-                            <li data-i18n="ostro.arch4Item3"><strong>Pronto per l'implementazione</strong> in ambienti aziendali, con tempi di attivazione rapidi.</li>
-                        </ul>
+                        <p data-i18n="ostro.arch4Text">Dashboard intuitiva con grafici interattivi, pensata per essere utilizzata anche da chi non ha competenze tecniche.</p>
                     </div>
                 </div>
             </div>

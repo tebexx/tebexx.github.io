@@ -1582,7 +1582,7 @@ button, input, textarea {
    a big gradient value instead of a plain index number. */
 .ostro-stats-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -1642,35 +1642,54 @@ button, input, textarea {
 .ostro-arch-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 20px;
 }
 
-.ostro-arch-group h4 {
+.ostro-arch-card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 28px 26px;
+    background: var(--color-surface);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.ostro-arch-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-border-hover);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+}
+
+.ostro-arch-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: var(--radius-sm);
+    background: linear-gradient(135deg, rgba(43, 110, 245, 0.15), rgba(34, 211, 238, 0.15));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.ostro-arch-icon svg {
+    width: 20px;
+    height: 20px;
+    color: #22d3ee;
+}
+
+.ostro-arch-card h4 {
     font-family: var(--font-sans);
     font-size: 1rem;
     font-weight: 500;
-    margin-bottom: 18px;
-    padding-bottom: 14px;
-    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 10px;
 }
 
-.ostro-arch-group ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.ostro-arch-group li {
+.ostro-arch-card p {
     font-size: 0.9rem;
     color: var(--color-text-muted);
     font-weight: 300;
     line-height: 1.65;
-}
-
-.ostro-arch-group li strong {
-    color: var(--color-text-light);
-    font-weight: 500;
 }
 
 /* Ostro specs: floating flip cards, one per topic — front shows just the
@@ -2045,13 +2064,9 @@ button, input, textarea {
         grid-template-columns: 1fr;
     }
 
-    .ostro-stats-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .ostro-arch-grid {
         grid-template-columns: 1fr;
-        gap: 32px;
+        gap: 20px;
     }
 
     .focus-card {
