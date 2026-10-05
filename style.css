@@ -84,6 +84,22 @@ button, .btn, a, .nav-link, .logo, .lang-btn,
     -webkit-touch-callout: none;
 }
 
+/* Touch screens: no text selection (and no tap flash) unless the user holds
+   a finger down on text — script.js section 4d adds `allow-select` to <body>
+   once a press has lasted long enough, so a plain tap never selects a word
+   but press-and-hold still can. */
+@media (hover: none) and (pointer: coarse) {
+    body {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    body:not(.allow-select) {
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+    }
+}
+
 /* Custom Selection */
 ::selection {
     background-color: rgba(255, 255, 255, 0.15);

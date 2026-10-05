@@ -538,6 +538,66 @@ document.addEventListener('DOMContentLoaded', () => {
         tags.appendChild(track);
     });
 
+    // --- 4d. Touch: select text only on press-and-hold ---
+    // On touch screens style.css turns text selection off by default, so a
+    // plain tap never selects a word. Once a finger has stayed down for
+    // LONG_PRESS_MS without moving (i.e. not a tap or a scroll), selection
+    // is switched back on just before the browser's own long-press
+    // gesture selects the word. It's switched off again once the
+    // selection is gone.
+    if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) {
+        const LONG_PRESS_MS = 300;
+        const MOVE_TOLERANCE_PX = 10;
+        let pressTimer = null;
+        let startX = 0;
+        let startY = 0;
+        let hadSelection = false;
+
+        const hasSelection = () => !window.getSelection().isCollapsed;
+        const cancelPress = () => {
+            clearTimeout(pressTimer);
+            pressTimer = null;
+        };
+
+        document.addEventListener('touchstart', e => {
+            if (e.touches.length !== 1) return cancelPress();
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+            cancelPress();
+            pressTimer = setTimeout(() => {
+                document.body.classList.add('allow-select');
+            }, LONG_PRESS_MS);
+        }, { passive: true });
+
+        document.addEventListener('touchmove', e => {
+            const t = e.touches[0];
+            if (Math.abs(t.clientX - startX) > MOVE_TOLERANCE_PX ||
+                Math.abs(t.clientY - startY) > MOVE_TOLERANCE_PX) {
+                cancelPress();
+            }
+        }, { passive: true });
+
+        const endPress = () => {
+            cancelPress();
+            // Held long enough to unlock selection but nothing got
+            // selected (e.g. pressed on empty space): lock it again.
+            setTimeout(() => {
+                if (!hasSelection()) document.body.classList.remove('allow-select');
+            }, 700);
+        };
+        document.addEventListener('touchend', endPress, { passive: true });
+        document.addEventListener('touchcancel', endPress, { passive: true });
+
+        document.addEventListener('selectionchange', () => {
+            if (hasSelection()) {
+                hadSelection = true;
+            } else if (hadSelection) {
+                hadSelection = false;
+                document.body.classList.remove('allow-select');
+            }
+        });
+    }
+
     // --- 4b. Collapsible Journey Sections (Experience / Education) ---
     document.querySelectorAll('.journey-toggle').forEach(btn => {
         const section = btn.closest('.journey-section');
