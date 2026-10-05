@@ -515,6 +515,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- 4c. Skills Marquee (mobile) ---
+    // Wraps each skills row's tags in a track and appends a duplicate set,
+    // so on phones (see the 768px media query in style.css) the row can
+    // loop seamlessly instead of wrapping into a wall of tags. Rows
+    // alternate direction; speed scales with tag count so they all move
+    // at a similar pace. On desktop the clones stay hidden.
+    document.querySelectorAll('.skills-tags').forEach((tags, rowIndex) => {
+        const items = [...tags.children];
+        const track = document.createElement('div');
+        track.className = 'skills-track';
+        if (rowIndex % 2 === 1) track.classList.add('reverse');
+        track.style.setProperty('--marquee-duration', `${items.length * 3}s`);
+
+        items.forEach(item => track.appendChild(item));
+        items.forEach(item => {
+            const clone = item.cloneNode(true);
+            clone.classList.add('is-clone');
+            clone.setAttribute('aria-hidden', 'true');
+            track.appendChild(clone);
+        });
+        tags.appendChild(track);
+    });
+
     // --- 4b. Collapsible Journey Sections (Experience / Education) ---
     document.querySelectorAll('.journey-toggle').forEach(btn => {
         const section = btn.closest('.journey-section');

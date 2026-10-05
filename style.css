@@ -896,10 +896,29 @@ button, input, textarea {
     letter-spacing: -0.01em;
 }
 
+/* One row per category (label left, tags right) instead of three narrow
+   columns of ragged, wrapping pills, which read as a jumble. */
 .skills-groups {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-group {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    grid-template-columns: 220px 1fr;
+    gap: 24px;
+    align-items: baseline;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.skills-group:first-child {
+    padding-top: 0;
+}
+
+.skills-group:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .skills-group h4 {
@@ -909,20 +928,19 @@ button, input, textarea {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--color-text-muted);
-    margin-bottom: 16px;
 }
 
 .skills-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
 }
 
 .skills-tags span {
     font-size: 0.85rem;
     font-weight: 300;
     color: var(--color-text-light);
-    border: 1px solid var(--color-border);
+    background: var(--color-surface);
     border-radius: var(--radius-sm);
     padding: 6px 14px;
     transition: var(--transition-fast);
@@ -930,7 +948,23 @@ button, input, textarea {
 
 .skills-tags span:hover {
     color: var(--color-text);
-    border-color: var(--color-border-hover);
+    background: var(--color-surface-hover);
+}
+
+/* The track and its duplicated "clone" tags only exist for the mobile
+   marquee (see script.js, section 4c). On desktop the track is invisible
+   to layout and the clones are hidden, so the tags wrap as before. */
+.skills-track {
+    display: contents;
+}
+
+.skills-track .is-clone {
+    display: none;
+}
+
+@keyframes skills-marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
 
 /* --- Projects Section --- */
@@ -2127,9 +2161,42 @@ button, input, textarea {
         padding: 28px 22px;
     }
 
-    .skills-groups {
+    .skills-group {
         grid-template-columns: 1fr;
-        gap: 28px;
+        gap: 12px;
+        padding: 20px 0;
+    }
+
+    /* Each row becomes a single-line marquee instead of a wall of wrapped
+       tags that fills the phone screen. Margin (not gap) between tags so
+       exactly half the track is one full loop, with no jump at the seam.
+       Touching a row pauses it. */
+    .skills-tags {
+        overflow: hidden;
+        -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+        mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+    }
+
+    .skills-track {
+        display: flex;
+        width: max-content;
+        animation: skills-marquee var(--marquee-duration, 30s) linear infinite;
+    }
+
+    .skills-track.reverse {
+        animation-direction: reverse;
+    }
+
+    .skills-tags:active .skills-track {
+        animation-play-state: paused;
+    }
+
+    .skills-track span,
+    .skills-track .is-clone {
+        display: block;
+        flex: 0 0 auto;
+        white-space: nowrap;
+        margin-right: 8px;
     }
 
     /* Sized per card, not uniformly: text length varies a lot between
@@ -2203,6 +2270,22 @@ button, input, textarea {
 
     .hero-glow {
         display: none;
+    }
+
+    /* Skills marquee: no auto-scroll; each row is swiped by hand instead,
+       with the duplicated loop tags hidden. */
+    .skills-track {
+        animation: none;
+    }
+
+    .skills-track .is-clone {
+        display: none;
+    }
+
+    .skills-tags {
+        overflow-x: auto;
+        -webkit-mask-image: none;
+        mask-image: none;
     }
 
     .reveal-item {
