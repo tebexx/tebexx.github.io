@@ -71,9 +71,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             },
             ostro: {
-                metaTitle: "Ostro | Assistente AI per Database | Tobia Barbini",
+                metaTitle: "Ostro | Fai domande ai tuoi dati",
                 metaDescription: "Ostro è un agente AI offline che trasforma domande in linguaggio naturale in query SQL: architettura RAG con LLM locali, sicurezza read-only e zero dipendenza dal cloud.",
-                kicker: "Rosa dei Venti",
+                kicker: "Fai domande ai tuoi dati",
+                developedBy: "Sviluppato da Tobia Barbini",
                 heroTitle: "Ostro",
                 heroTagline: "“Il vento che porta le tue domande fino in fondo ai dati, e torna con la risposta.”",
                 ctaDemo: "Contattami per una Demo",
@@ -92,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 stat5Label: "Tabelle Supportate",
                 stat5Desc: "Si adatta a database di qualsiasi dimensione, senza vincoli sul numero di tabelle gestite.",
                 contextTitle: "Contesto",
-                contextText: "Questo progetto nasce per interporsi tra entità, ambienti e contesti diversi, eliminando l'incomunicabilità e i passaggi macchinosi. Nelle strutture informative tradizionali, la distanza tra chi cerca risposte e i dati memorizzati crea barriere e dipendenze rigide. Questo strumento si colloca in posizione intermedia, traducendo la complessità in un dialogo naturale.",
+                contextText: "Ostro nasce per interporsi tra entità, ambienti e contesti diversi, eliminando l'incomunicabilità e i passaggi macchinosi. Nelle strutture informative tradizionali, la distanza tra chi cerca risposte e i dati memorizzati crea barriere e dipendenze rigide. Questo strumento si colloca in posizione intermedia, traducendo la complessità in un dialogo naturale.",
                 solutionTitle: "Soluzione",
                 solutionText: "Ostro è un agente virtuale offline in grado di interpretare domande formulate in linguaggio naturale e tradurle istantaneamente in query SQL precise. Elimina la rigidità dei canali tradizionali e rende l'interazione fluida, immediata e guidata dall'esperienza utente. Per garantire la tutela dell'ambiente dati, l'agente opera in sola lettura (READ-ONLY).",
                 archTitle: "Architettura Tecnica",
@@ -111,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 demoAlt: "Schermata della demo di Ostro",
                 rotateHint: "⟳ Ruota lo schermo per una visione migliore",
                 roadmapTitle: "In Sviluppo",
-                roadmapIntro: "Ostro è un progetto in continua evoluzione. Ecco su cosa sto lavorando in questo momento.",
+                roadmapIntro: "Ostro è in continua evoluzione. Ecco le funzionalità in arrivo.",
                 roadmapBadge: "In Sviluppo",
                 roadmap1Title: "Report PDF",
                 roadmap1Text: "Generazione di report PDF con i dati in tempo reale, richiedibili con un clic direttamente dalla dashboard.",
@@ -154,6 +155,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 rightsTitle: "Domande",
                 rightsText: "Per qualsiasi domanda su questa informativa, scrivimi a tobia.barbini@gmail.com.",
                 backHome: "Torna al sito"
+            },
+            ostroPrivacy: {
+                metaTitle: "Privacy Policy | Ostro",
+                metaDescription: "Informativa sulla privacy di Ostro: hosting, memorizzazione locale, cookie e contatti.",
+                updated: "Ultimo aggiornamento: Ottobre 2026",
+                contactText: "I pulsanti di contatto (“Contattami per una Demo” e “Scrivimi”) si limitano ad aprire il client di posta predefinito del tuo dispositivo (link mailto): il sito non possiede un modulo che raccoglie o invia dati a un server. Qualsiasi comunicazione via email avviene direttamente tra te e me, secondo le normali modalità di corrispondenza privata. Il pulsante LinkedIn apre il mio profilo su un sito esterno, soggetto alla privacy policy di LinkedIn.",
+                backHome: "Torna a Ostro"
             }
         },
         en: {
@@ -223,9 +231,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             },
             ostro: {
-                metaTitle: "Ostro | AI Database Assistant | Tobia Barbini",
+                metaTitle: "Ostro | Ask your data anything",
                 metaDescription: "Ostro is an offline AI agent that turns natural language questions into SQL queries: RAG architecture with local LLMs, read-only security and zero cloud dependency.",
-                kicker: "Rosa dei Venti",
+                kicker: "Ask your data anything",
+                developedBy: "Built by Tobia Barbini",
                 heroTitle: "Ostro",
                 heroTagline: "“The wind that carries your questions all the way to the data, and comes back with the answer.”",
                 ctaDemo: "Contact Me for a Demo",
@@ -244,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 stat5Label: "Tables Supported",
                 stat5Desc: "Scales to databases of any size, with no limit on the number of tables it can handle.",
                 contextTitle: "Context",
-                contextText: "This project exists to sit between different entities, environments and contexts, eliminating communication breakdowns and cumbersome processes. In traditional information systems, the distance between those seeking answers and the stored data creates barriers and rigid dependencies. This tool occupies that intermediate position, translating complexity into natural dialogue.",
+                contextText: "Ostro exists to sit between different entities, environments and contexts, eliminating communication breakdowns and cumbersome processes. In traditional information systems, the distance between those seeking answers and the stored data creates barriers and rigid dependencies. This tool occupies that intermediate position, translating complexity into natural dialogue.",
                 solutionTitle: "Solution",
                 solutionText: "Ostro is an offline virtual agent capable of interpreting questions asked in natural language and instantly translating them into precise SQL queries. It removes the rigidity of traditional channels and makes the interaction fluid, immediate and driven by user experience. To protect the data environment, the agent operates in read-only mode.",
                 archTitle: "Technical Architecture",
@@ -263,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 demoAlt: "Ostro demo screenshot",
                 rotateHint: "⟳ Rotate your screen for a better view",
                 roadmapTitle: "In Development",
-                roadmapIntro: "Ostro is a project in constant evolution. Here's what I'm currently working on.",
+                roadmapIntro: "Ostro is constantly evolving. Here are the features on the way.",
                 roadmapBadge: "In Progress",
                 roadmap1Title: "PDF Reports",
                 roadmap1Text: "Generates PDF reports from real-time data, requestable with one click directly from the dashboard.",
@@ -306,6 +315,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 rightsTitle: "Questions",
                 rightsText: "For any questions about this notice, write to me at tobia.barbini@gmail.com.",
                 backHome: "Back to the site"
+            },
+            ostroPrivacy: {
+                metaTitle: "Privacy Policy | Ostro",
+                metaDescription: "Privacy policy for Ostro: hosting, local storage, cookies and contact.",
+                updated: "Last updated: October 2026",
+                contactText: "The contact buttons (“Contact Me for a Demo” and “Get in Touch”) simply open your device's default email client (a mailto link): the site has no form that collects or sends data to a server. Any email exchange happens directly between you and me, as ordinary private correspondence. The LinkedIn button opens my profile on an external site, which is subject to LinkedIn's own privacy policy.",
+                backHome: "Back to Ostro"
             }
         }
     };
@@ -328,7 +344,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // <title>/description rather than the homepage's, via a data-page
         // attribute on <body>.
         const page = document.body.dataset.page;
-        const pageMetaKeys = { privacy: 'privacy', ostro: 'ostro' };
+        const pageMetaKeys = { privacy: 'privacy', ostro: 'ostro', 'ostro-privacy': 'ostroPrivacy' };
         const metaNamespace = pageMetaKeys[page];
         const titleKey = metaNamespace ? `${metaNamespace}.metaTitle` : 'meta.title';
         const descKey = metaNamespace ? `${metaNamespace}.metaDescription` : 'meta.description';

@@ -367,6 +367,25 @@ button, input, textarea {
     color: var(--color-text-muted);
 }
 
+/* Ostro's own wordmark (wind symbol + name), used on /ostro/ pages instead
+   of the portfolio's "TB" monogram. */
+.ostro-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.ostro-logo svg {
+    width: 26px;
+    height: 26px;
+}
+
 .header-actions {
     display: flex;
     align-items: center;

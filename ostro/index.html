@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ostro | Assistente AI per Database | Tobia Barbini</title>
+    <title>Ostro | Fai domande ai tuoi dati</title>
     <meta name="description" content="Ostro è un agente AI offline che trasforma domande in linguaggio naturale in query SQL: architettura RAG con LLM locali, sicurezza read-only e zero dipendenza dal cloud.">
     <meta name="author" content="Tobia Barbini">
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/ostro/favicon.svg">
 
     <!-- Open Graph / Twitter preview (shown when this link is sent by
          email or shared elsewhere, instead of a generic globe placeholder) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tobiabarbini.com/ostro/">
-    <meta property="og:title" content="Ostro | Assistente AI per Database | Tobia Barbini">
+    <meta property="og:title" content="Ostro | Fai domande ai tuoi dati">
     <meta property="og:description" content="Ostro è un agente AI offline che trasforma domande in linguaggio naturale in query SQL: architettura RAG con LLM locali, sicurezza read-only e zero dipendenza dal cloud.">
     <meta property="og:image" content="https://tobiabarbini.com/screen/screen%201.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ostro | Assistente AI per Database | Tobia Barbini">
+    <meta name="twitter:title" content="Ostro | Fai domande ai tuoi dati">
     <meta name="twitter:description" content="Ostro è un agente AI offline che trasforma domande in linguaggio naturale in query SQL: architettura RAG con LLM locali, sicurezza read-only e zero dipendenza dal cloud.">
     <meta name="twitter:image" content="https://tobiabarbini.com/screen/screen%201.png">
 
@@ -29,13 +29,18 @@
     <!-- Scroll Progress Indicator -->
     <div class="scroll-progress" id="scroll-progress"></div>
 
-    <!-- Header: standalone page, no link back to the portfolio (not even
-         the logo) — this page is meant to be sent on its own. Only the
-         language switch remains. -->
+    <!-- Header: standalone page with its own Ostro branding and no link back
+         to the portfolio (not even the logo) — this page is meant to be sent
+         on its own. Only the language switch remains. -->
     <header class="header">
         <div class="container header-container">
-            <span class="logo">
-                TB
+            <span class="ostro-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 8h9.5a2.5 2.5 0 1 0-2.5-2.5"></path>
+                    <path d="M3 12h14.5a2.5 2.5 0 1 1-2.5 2.5"></path>
+                    <path d="M3 16h6.5a2.5 2.5 0 1 1-2.5 2.5"></path>
+                </svg>
+                Ostro
             </span>
 
             <div class="header-actions">
@@ -75,7 +80,7 @@
             <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
             <div class="container hero-container">
                 <div class="hero-content">
-                    <span class="hero-tagline reveal-item" data-i18n="ostro.kicker">Rosa dei Venti</span>
+                    <span class="hero-tagline reveal-item" data-i18n="ostro.kicker">Fai domande ai tuoi dati</span>
                     <h1 class="hero-title reveal-item" data-i18n="ostro.heroTitle">Ostro</h1>
                     <p class="hero-description reveal-item" data-i18n="ostro.heroTagline">
                         “Il vento che porta le tue domande fino in fondo ai dati, e torna con la risposta.”
@@ -133,7 +138,7 @@
                 <div class="about-text reveal-item" style="max-width: 780px; margin: 0 auto;">
                     <h3 data-i18n="ostro.contextTitle">Contesto</h3>
                     <p data-i18n="ostro.contextText">
-                        Questo progetto nasce per interporsi tra entità, ambienti e contesti diversi, eliminando l'incomunicabilità e i passaggi macchinosi. Nelle strutture informative tradizionali, la distanza tra chi cerca risposte e i dati memorizzati crea barriere e dipendenze rigide. Questo strumento si colloca in posizione intermedia, traducendo la complessità in un dialogo naturale.
+                        Ostro nasce per interporsi tra entità, ambienti e contesti diversi, eliminando l'incomunicabilità e i passaggi macchinosi. Nelle strutture informative tradizionali, la distanza tra chi cerca risposte e i dati memorizzati crea barriere e dipendenze rigide. Questo strumento si colloca in posizione intermedia, traducendo la complessità in un dialogo naturale.
                     </p>
 
                     <h3 data-i18n="ostro.solutionTitle">Soluzione</h3>
@@ -245,7 +250,7 @@
                     <h2 class="section-title" data-i18n="ostro.roadmapTitle">In Sviluppo</h2>
                     <div class="section-divider"></div>
                 </div>
-                <p class="ostro-arch-intro" data-i18n="ostro.roadmapIntro">Ostro è un progetto in continua evoluzione. Ecco su cosa sto lavorando in questo momento.</p>
+                <p class="ostro-arch-intro" data-i18n="ostro.roadmapIntro">Ostro è in continua evoluzione. Ecco le funzionalità in arrivo.</p>
 
                 <div class="ostro-roadmap-grid">
                     <div class="ostro-roadmap-card reveal-item">
@@ -288,9 +293,9 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-container">
-            <p class="copyright">&copy; <span id="year">2026</span> Tobia Barbini. <span data-i18n="footer.rights">Tutti i diritti riservati.</span></p>
+            <p class="copyright">&copy; <span id="year">2026</span> Ostro &middot; <span data-i18n="ostro.developedBy">Sviluppato da Tobia Barbini</span></p>
             <div class="footer-links">
-                <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                <a href="/ostro/privacy/" data-i18n="footer.privacy">Privacy Policy</a>
                 <a href="#hero" data-i18n="footer.backToTop">Torna all'inizio</a>
             </div>
         </div>
