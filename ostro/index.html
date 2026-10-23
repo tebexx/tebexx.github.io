@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ostro | Fai domande ai tuoi dati</title>
-    <meta name="description" content="Ostro è un agente AI offline che trasforma domande in linguaggio naturale in query SQL: architettura RAG con LLM locali, sicurezza read-only e zero dipendenza dal cloud.">
+    <meta name="description" content="Ostro è un agente AI offline che trasforma domande in linguaggio naturale in query SQL: risposte e grafici dai tuoi dati, in sicurezza e senza dipendere dal cloud.">
     <meta name="author" content="Tobia Barbini">
 
     <link rel="icon" type="image/svg+xml" href="/ostro/favicon.svg">
@@ -14,11 +14,11 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tobiabarbini.com/ostro/">
     <meta property="og:title" content="Ostro | Fai domande ai tuoi dati">
-    <meta property="og:description" content="Ostro è un agente AI offline che trasforma domande in linguaggio naturale in query SQL: architettura RAG con LLM locali, sicurezza read-only e zero dipendenza dal cloud.">
+    <meta property="og:description" content="Ostro è un agente AI offline che trasforma domande in linguaggio naturale in query SQL: risposte e grafici dai tuoi dati, in sicurezza e senza dipendere dal cloud.">
     <meta property="og:image" content="https://tobiabarbini.com/screen/screen%201.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ostro | Fai domande ai tuoi dati">
-    <meta name="twitter:description" content="Ostro è un agente AI offline che trasforma domande in linguaggio naturale in query SQL: architettura RAG con LLM locali, sicurezza read-only e zero dipendenza dal cloud.">
+    <meta name="twitter:description" content="Ostro è un agente AI offline che trasforma domande in linguaggio naturale in query SQL: risposte e grafici dai tuoi dati, in sicurezza e senza dipendere dal cloud.">
     <meta name="twitter:image" content="https://tobiabarbini.com/screen/screen%201.png">
 
     <!-- Stylesheet (Outfit + Plus Jakarta Sans are self-hosted via @font-face in here) -->
@@ -109,19 +109,19 @@
 
                 <div class="ostro-stats-grid">
                     <div class="ostro-stat-card reveal-item">
-                        <div class="ostro-stat-value" data-i18n="ostro.stat1Value">7-14B</div>
-                        <div class="ostro-stat-label" data-i18n="ostro.stat1Label">Parametri del Modello</div>
-                        <p class="ostro-stat-desc" data-i18n="ostro.stat1Desc">Modello linguistico open-source, eseguito interamente in locale, senza alcuna dipendenza da servizi cloud esterni.</p>
+                        <div class="ostro-stat-value" data-i18n="ostro.stat1Value">100%</div>
+                        <div class="ostro-stat-label" data-i18n="ostro.stat1Label">Offline & Privacy First</div>
+                        <p class="ostro-stat-desc" data-i18n="ostro.stat1Desc">Nessuna domanda o dato aziendale lascia mai la tua infrastruttura.</p>
                     </div>
                     <div class="ostro-stat-card reveal-item">
-                        <div class="ostro-stat-value" data-i18n="ostro.stat2Value">128K</div>
-                        <div class="ostro-stat-label" data-i18n="ostro.stat2Label">Token di Contesto</div>
-                        <p class="ostro-stat-desc" data-i18n="ostro.stat2Desc">Sufficienti ad analizzare schemi di database complessi in un'unica richiesta.</p>
+                        <div class="ostro-stat-value" data-i18n="ostro.stat2Value">Zero</div>
+                        <div class="ostro-stat-label" data-i18n="ostro.stat2Label">SQL da Conoscere</div>
+                        <p class="ostro-stat-desc" data-i18n="ostro.stat2Desc">Chiunque può fare domande in linguaggio naturale, come le farebbe a un collega.</p>
                     </div>
                     <div class="ostro-stat-card reveal-item">
-                        <div class="ostro-stat-value" data-i18n="ostro.stat3Value">100%</div>
-                        <div class="ostro-stat-label" data-i18n="ostro.stat3Label">Offline & Privacy First</div>
-                        <p class="ostro-stat-desc" data-i18n="ostro.stat3Desc">Nessuna domanda o dato aziendale lascia mai la tua infrastruttura.</p>
+                        <div class="ostro-stat-value" data-i18n="ostro.stat3Value">Live</div>
+                        <div class="ostro-stat-label" data-i18n="ostro.stat3Label">Dati in Tempo Reale</div>
+                        <p class="ostro-stat-desc" data-i18n="ostro.stat3Desc">Le risposte arrivano direttamente dal tuo database, sempre aggiornate.</p>
                     </div>
                     <div class="ostro-stat-card reveal-item">
                         <div class="ostro-stat-value" data-i18n="ostro.stat5Value">Illimitate</div>
@@ -153,10 +153,10 @@
         <section class="section" id="architecture">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title" data-i18n="ostro.archTitle">Architettura Tecnica</h2>
+                    <h2 class="section-title" data-i18n="ostro.archTitle">Caratteristiche</h2>
                     <div class="section-divider"></div>
                 </div>
-                <p class="ostro-arch-intro" data-i18n="ostro.archIntro">Ogni componente è stato scelto per garantire precisione, sicurezza e indipendenza dal cloud.</p>
+                <p class="ostro-arch-intro" data-i18n="ostro.archIntro">Pensato per garantire precisione, sicurezza e indipendenza dal cloud.</p>
 
                 <div class="ostro-arch-grid">
                     <div class="ostro-arch-card reveal-item">
@@ -166,8 +166,8 @@
                                 <path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"></path>
                             </svg>
                         </div>
-                        <h4 data-i18n="ostro.arch1Title">Intelligenza Artificiale</h4>
-                        <p data-i18n="ostro.arch1Text">Modello linguistico locale che genera risposte precise consultando in tempo reale la struttura del database (RAG).</p>
+                        <h4 data-i18n="ostro.arch1Title">Linguaggio Naturale</h4>
+                        <p data-i18n="ostro.arch1Text">Comprende le domande in linguaggio naturale e le trasforma in risposte precise sui tuoi dati.</p>
                     </div>
 
                     <div class="ostro-arch-card reveal-item">
@@ -179,7 +179,7 @@
                             </svg>
                         </div>
                         <h4 data-i18n="ostro.arch2Title">Compatibilità Database</h4>
-                        <p data-i18n="ostro.arch2Text">Si connette ai principali database relazionali aziendali e riconosce automaticamente tabelle, colonne e relazioni.</p>
+                        <p data-i18n="ostro.arch2Text">Si collega ai principali database relazionali aziendali e si adatta alla loro struttura.</p>
                     </div>
 
                     <div class="ostro-arch-card reveal-item">
