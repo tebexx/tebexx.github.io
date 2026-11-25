@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             journey: {
                 experienceTitle: "Esperienza Lavorativa",
+                item9: { year: "2026 - Presente", desc: "Collaborazione allo sviluppo di Movein, piattaforma dedicata all'accessibilità urbana per persone con disabilità nella città di Venezia. Progettazione e implementazione di un algoritmo di routing avanzato per il calcolo di percorsi ottimali, tenendo conto dinamicamente di barriere architettoniche e ostacoli non accessibili." },
                 item1: { title: "Sviluppatore Python", desc: "Estrazione in tempo reale di dati meteomarini acquisiti da stazioni lagunari per modelli di previsione statistici della marea, considerando le interferenze del sistema MOSE. Gestione e segnalazione allerte meteo lungo la costa regionale." },
                 item3: { desc: "Ricerca e sperimentazione su modelli di embedding per la ricerca semantica, analisi comparativa di modelli e studio di tecniche avanzate di Natural Language Processing (NLP)." },
                 item4: { desc: "Sviluppo in React Native per l'applicazione mobile di delivery (gestione flussi clienti e corrieri), curando la manutenzione del codice e l'ottimizzazione dell'esperienza utente." },
@@ -184,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             journey: {
                 experienceTitle: "Work Experience",
+                item9: { year: "2026 - Present", desc: "Contributing to the development of Movein, a platform dedicated to urban accessibility for people with disabilities in the city of Venice. Design and implementation of an advanced routing algorithm that calculates optimal routes, dynamically accounting for architectural barriers and inaccessible obstacles." },
                 item1: { title: "Python Developer", desc: "Real-time extraction of meteo-marine data collected from lagoon stations for statistical tide forecasting models, accounting for interference from the MOSE flood barrier system. Management and issuance of weather alerts along the regional coast." },
                 item3: { desc: "Research and experimentation on embedding models for semantic search, comparative analysis of models, and study of advanced Natural Language Processing (NLP) techniques." },
                 item4: { desc: "React Native development for the delivery mobile app (managing customer and courier flows), handling code maintenance and user experience optimization." },
